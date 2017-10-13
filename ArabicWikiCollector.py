@@ -8,9 +8,9 @@ import md5
 file_list = {}
 cwd = os.path.dirname(os.path.realpath(__file__))
 url = "https://ar.wikipedia.org/wiki/Special:Random"
-current_files = os.listdir(cwd)
 
 def build_file_list():
+    current_files = os.listdir(cwd)
     for file in current_files:
         file_list[str(file).replace('.txt', '')] = 1
 
